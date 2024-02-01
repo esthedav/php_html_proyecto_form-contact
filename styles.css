@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:#323230;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+.contact-section {
+  width: 100ch;
+  height: 80%;
+  margin: 4rem auto;
+  display: flex;
+  background: #353534;
+  box-shadow: 4 4px 8px rgba(0, 0, 0, 0.05);
+}
+.contact__dark-part {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 60%;
+  .contact-form {
+    width: 70%;
+    margin-right: 3rem;
+    color: #a29b3f;
+    & h2 {
+      margin-bottom: 2rem;
+    }
+    .input-group {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin: 12px 0;
+      & label {
+        font-weight: bold;
+      }
+      & input {
+        height: 1.5rem;
+        line-height: 1.2rem;
+        background-color: #353534;
+        color: #c3ba37;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #a29b3f;
+        transition: 0.05s ease-in-out
+      }
+      & textarea {
+        background-color: #353534;
+        outline: none;
+        border: 1px solid #a29b3f;
+        color: #c3ba37;
+        padding: 4px;
+        transition: 0.05s ease-in-out;
+      }
+
+      & input:focus {
+        transition: 0.1s ease-in-out;
+        border-bottom: 2px solid #c3ba37;
+      }
+      & textarea:focus {
+        transition: 0.1s ease-in-out;
+        border: 2px solid #c3ba37;
+      }
+    }
+    & button {
+      background: #c3ba37;
+      color: #4b4819;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      transition: 0.05s ease-in-out;
+    }
+    & button:hover {
+      cursor: pointer;
+      background: #979025;
+      color: #24220e;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+.contact__white-part {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  background: #c9d0ca;
+  .contact-info {
+    width: 70%;
+    margin-left: 1.5rem;
+    & h2 {
+      margin-bottom: 2rem;
+    }
+    & div {
+      margin-bottom: 1rem;
+    }
+  }
+}
